@@ -122,10 +122,11 @@ html {
 }
 
 .banner {
-    width: clamp(15em,32vw,28em);
+    align-items: center;
+    width: clamp(18em,32vw,28em);
 }
 .display-4 {
-    font-size: clamp(2.5em,4.5vw,4em);
+    font-size: clamp(3em,4.5vw,4em);
 }
 
 .display-3 {
