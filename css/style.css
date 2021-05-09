@@ -130,7 +130,7 @@ html {
 }
 
 .display-3 {
-    font-size: 2em;
+    font-size: clamp(1.5em,2.3vw,2em);
 }
 
 .text-dark {
@@ -226,7 +226,7 @@ input:checked+.slider:before {
     border-radius: 50px;
     cursor: pointer;
     display: none;
-    z-index: 99;
+    z-index: 99; !important;
 }
 
 #myBtn::before,

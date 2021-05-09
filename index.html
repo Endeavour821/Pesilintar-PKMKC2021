@@ -21,6 +21,7 @@
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 
 <body>
@@ -66,7 +67,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="py-3 nav-link text-dark">
+                <a class="py-3 nav-link text-dark">
                     <!-- <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i> -->
                     <i class="mr-3 text-primary material-icons" style="vertical-align:middle;">data_saver_on</i>
                     <span>Saving Mode</span>
@@ -79,15 +80,20 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="py-3 nav-link text-dark">
-                    <!-- <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i> -->
+                <a class="py-3 nav-link text-dark">
                     <i class="mr-3 text-primary material-icons" style="vertical-align:middle;">dark_mode</i>
                     <span>Dark Mode</span>
                     <span class="ml-4">
-                        <label class="switch">
-                            <input type="checkbox">
+                        <label class="switch" for="darkSwitch">
+                            <input type="checkbox" id="darkSwitch">
                             <span class="slider round"></span>
+                            <script src="js/dark-mode-switch.min.js"></script>
                         </label>
+                        <!-- <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                            <label class="custom-control-label" for="darkSwitch"></label>
+                        </div>
+                        <script src="js/dark-mode-switch.min.js"></script> -->
                     </span>
                 </a>
             </li>
@@ -109,8 +115,8 @@
         <div id="home">
             <!-- Toggle button -->
             <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4">
-                <i class="material-icons mr-2" style="vertical-align:middle; font-size: 18px;">menu</i>
-                <small class="text-uppercase font-weight-bold"> Menu</small></button>
+                <i class="text-dark material-icons mr-2" style="vertical-align:middle; font-size: 18px;">menu</i>
+                <small class="text-dark text-uppercase font-weight-bold"> Menu</small></button>
             <!-- end toggle button -->
             <!--BANNER-->
             <div class="row text-dark">
@@ -143,14 +149,14 @@
             </div>
             <div class="row text-dark mt-5">
                 <div class="col-lg-6 my-auto">
-                    <div class="container px-4 pt-4 pb-3"
-                        style="border-radius: 5px; height: auto; width:100%; background-color:white">
+                    <div class="container px-4 pt-4 pb-3 bg-white"
+                        style="border-radius: 5px; height: auto; width:100%;">
                         <p>Kondisi terkini : </p>
                         <p>Energi Terpakai : </p>
                         <p>Pulsa / Biaya : </p>
                     </div>
-                    <div class="container mt-4 px-4 pt-4 pb-3"
-                        style="border-radius: 5px; height: auto; width:100%; background-color:white">
+                    <div class="container mt-4 px-4 pt-4 pb-3 bg-white"
+                        style="border-radius: 5px; height: auto; width:100%;">
                         <p>Tegangan : </p>
                         <p>Arus : </p>
                         <p>Daya : </p>
@@ -159,11 +165,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 my-auto">
-                    <div class="container px-4 pt-4 pb-3"
-                        style="border-radius: 5px; height: auto; width:100%; background-color:white">
+                    <div class="container px-4 pt-4 pb-3 bg-white"
+                        style="border-radius: 5px; height: auto; width:100%;">
                         <p class="text-primary"><strong>Grafik Pulsa Listrik</strong></p>
                         <div class="card">
-                            <div class="card-body" style="width:100%; max-height: 340px;">
+                            <div class="card-body bg-white" style="width:100%; max-height: 340px;">
                                 <canvas id="myChart" height="240px"></canvas>
                             </div>
                         </div>
@@ -184,8 +190,8 @@
             </div>
             <div class="row text-dark mt-5">
                 <div class="col-lg-6 my-auto">
-                    <div class="container px-4 pt-4 pb-3"
-                        style="border-radius: 5px; height: 400px; width:100%; background-color:white">
+                    <div class="container px-4 pt-4 pb-3 bg-white"
+                        style="border-radius: 5px; height: 400px; width:100%;">
                         <p class="text-primary"><strong>History And Alarm</strong></p>
                         <table class="table table-hover table-responsive-lg table-borderless">
                             <thead>
@@ -220,8 +226,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 my-auto">
-                    <div class="container px-4 pt-4 pb-3"
-                        style="border-radius: 5px; height: 400px; width:100%; background-color:white">
+                    <div class="container px-4 pt-4 pb-3 bg-white"
+                        style="border-radius: 5px; height: 400px; width:100%;">
                         <p class="text-primary"><strong>Riwayat Penggunaan Listrik</strong></p>
                         <input id="datepicker" width="auto" />
                         <table class="table table-hover table-responsive-lg table-borderless">
@@ -270,15 +276,15 @@
             </div>
             <div class="row text-dark mt-5">
                 <div class="col-lg-6 my-auto">
-                    <div class="container px-4 pt-4 pb-3"
-                        style="border-radius: 5px; height: auto; width:100%; background-color:white">
+                    <div class="container px-4 pt-4 pb-3 bg-white"
+                        style="border-radius: 5px; height: auto; width:100%;">
                         <p class="text-primary"><strong>Prabayar</strong></p>
                         <p>Listrik Saat ini : N </p>
                         <p>Pulsa : N</p>
                         <p>Prediksi listrik habis selama N hari </p>
                     </div>
-                    <div class="container mt-4 px-4 pt-4 pb-3 text-gray"
-                        style="border-radius: 5px; height: auto; width:100%; background-color:white">
+                    <div class="container mt-4 px-4 pt-4 pb-3 text-gray bg-white"
+                        style="border-radius: 5px; height: auto; width:100%;">
                         <p><strong>Pascabayar</strong></p>
                         <p>Listrik Saat ini : N </p>
                         <p>Pulsa : N</p>
@@ -291,7 +297,8 @@
         <footer>
             <div class="text-center container align-items-center">
                 <p><strong>Make With
-                        <span><i class="material-icons" style="vertical-align:middle; font-size: 20px; color:#ff6ab4;">favorite</i></span>
+                        <span><i class="material-icons"
+                                style="vertical-align:middle; font-size: 20px; color:#ff6ab4;">favorite</i></span>
                         in West Java . Copyright <span class="text-primary">
                             <a target="_blank" href="https://github.com/Endeavour821">@Endeavour821</a>
                         </span> 2021</p>
