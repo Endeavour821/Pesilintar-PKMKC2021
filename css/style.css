@@ -21,13 +21,13 @@ html {
 }
 
 .page-content {
-    width: calc(100% - 18rem);
-    margin-left: 18rem;
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
     transition: all 0.4s;
 }
 
 #sidebar.active {
-    margin-left: -18rem;
+    margin-left: -17rem;
 }
 
 /* #################################################### */
@@ -56,6 +56,11 @@ html {
 #content.active #Prediction {
     width: 100%;
     margin-left: 2rem;
+    padding-right: 4rem;
+}
+
+#content.active #home .banner-text {
+    width: 100%;
     padding-right: 4rem;
 }
 
@@ -112,7 +117,7 @@ html {
 }
 
 .display-4 {
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 .display-3 {
