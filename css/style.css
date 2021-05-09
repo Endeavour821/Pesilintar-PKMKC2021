@@ -64,6 +64,11 @@ html {
     padding-right: 4rem;
 }
 
+#content.active #home .banner {
+    width: 90%;
+    padding-left: 4rem;
+}
+
 
 /* #################################################### */
 .separator {
@@ -116,8 +121,11 @@ html {
     font-weight: 600;
 }
 
+.banner {
+    width: clamp(15em,32vw,28em);
+}
 .display-4 {
-    font-size: 3em;
+    font-size: clamp(2.5em,4.5vw,4em);
 }
 
 .display-3 {
