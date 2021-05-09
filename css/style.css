@@ -38,25 +38,25 @@ html {
 
 #content.active #home {
     width: 100%;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 
 #content.active #RealtimeCondition {
     width: 100%;
-    margin-left: 2.5rem;
-    padding-right: 4.5rem;
+    margin-left: 2rem;
+    padding-right: 4rem;
 }
 
 #content.active #History {
     width: 100%;
-    margin-left: 2.5rem;
-    padding-right: 4.5rem;
+    margin-left: 2rem;
+    padding-right: 4rem;
 }
 
 #content.active #Prediction {
     width: 100%;
-    margin-left: 2.5rem;
-    padding-right: 4.5rem;
+    margin-left: 2rem;
+    padding-right: 4rem;
 }
 
 
@@ -112,11 +112,11 @@ html {
 }
 
 .display-4 {
-    font-size: 5vw;
+    font-size: 3.5em;
 }
 
 .display-3 {
-    font-size: 3vw;
+    font-size: 2em;
 }
 
 .text-dark {
@@ -125,15 +125,15 @@ html {
 
 /* #################################################### */
 #tanggalwaktu {
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 #tanggalwaktu2 {
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 #tanggalwaktu3 {
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 /* #################################################### */
