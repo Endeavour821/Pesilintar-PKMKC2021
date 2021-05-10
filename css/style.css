@@ -3,6 +3,11 @@ body {
     /* background-image: linear-gradient(135.9deg, rgba(109, 25, 252, 1) 16.4%, rgba(125, 31, 165, 1) 56.1%); */
     min-height: 100vh;
     overflow-x: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
 }
 
 html {
@@ -123,14 +128,15 @@ html {
 
 .banner {
     align-items: center;
-    width: clamp(18em,32vw,28em);
+    width: clamp(18em, 32vw, 28em);
 }
+
 .display-4 {
-    font-size: clamp(3em,4.5vw,4em);
+    font-size: clamp(3em, 4.5vw, 4em);
 }
 
 .display-3 {
-    font-size: clamp(1.5em,2.3vw,2em);
+    font-size: clamp(1.5em, 2.3vw, 2em);
 }
 
 .text-dark {
@@ -213,6 +219,7 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
 /* #################################################### */
 /*scroll up*/
 #myBtn {
@@ -242,20 +249,24 @@ input:checked+.slider:before {
     border-top: transparent;
     border-left: transparent;
     animation: scroll-up 1s ease-in-out infinite;
+    z-index: 999999999 !important;
 }
 
 #myBtn::before {
     top: 30%;
     animation-delay: 0.3s;
     /* animation: scroll-down 1s ease-in-out infinite; */
+    z-index: 999999999 !important;
 }
 
 #myBtn:active {
     background-color: #5f62b4 !important;
+    z-index: 999999999 !important;
 }
 
 #myBtn:hover {
     background-color: #7579e7;
+    z-index: 999999999 !important;
 }
 
 /*animate function*/
@@ -278,4 +289,11 @@ input:checked+.slider:before {
         opacity: 0;
     }
 }
+
 /* #################################################### */
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.090);
+}
+
+/* ##################################################### */
